@@ -1,0 +1,29 @@
+Preconditions: Service http://localhost:9000/api is started
+ 
+Steps:
+1. User sends POST request to http://localhost:9000/api/books with certain body, for example:
+ {
+    "Id": 1,
+    "Author": "testAuthor1",
+    "Title": "Title1",
+    "Description": "nice book 1"
+}
+2. User sends GET request to http://localhost:9000/api/books?id=1 in order to observe the response.
+
+Result: Response is 200, but response body is:
+    {
+        "Id": 1,
+        "Title": "Title1",
+        "Description": "nice book 1",
+        "Author": null
+    }
+"Author": null is not correct;
+
+Expected result: Response shoulde be 200 but "Author" should be with value "testAuthor1", not null - "Author": "testAuthor1";
+Response body: 
+{
+    "Id": 1,
+    "Author": "testAuthor1",
+    "Title": "Title1",
+    "Description": "nice book 1"
+}
