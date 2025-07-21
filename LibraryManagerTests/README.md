@@ -6,7 +6,7 @@
 - Place `LibraryManager.exe` and 'LibraryManager.exe.config' in project root
 
 ## Running
-```bash
+-```bash
 dotnet test
 ```
 - from Test Explorer in Visual Studio run the tests 
