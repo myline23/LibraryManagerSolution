@@ -9,6 +9,7 @@
 ```bash
 dotnet test
 ```
+- from Test Explorer in Visual Studio run the tests 
 
 ## BDD
 - Feature file: Features/LibraryManager.feature
