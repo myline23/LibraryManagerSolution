@@ -3,7 +3,7 @@
 ## Prerequisites
 - .NET SDK
 - Visual Studio
-- Place `LibraryManager.exe` in project root
+- Place `LibraryManager.exe` and 'LibraryManager.exe.config' in project root
 
 ## Running
 ```bash
